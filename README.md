@@ -1,14 +1,15 @@
 # Introduction
 
-This PR is to show you how to integrate Zeppelin with Airflow. 
+This repository is to show you how to integrate Zeppelin with Airflow. 
 The philosophy behind the ingtegration is to make the transition from development stage to production stage as smooth as possible.  
-Zeppelin is good at data pipeline development (Spark, Flink, Hive, Python, Shell and etc), while Airflow is the defactor standard of Job orchestration.
+Zeppelin is good at data pipeline development (Spark, Flink, Hive, Python, Shell and etc), while Airflow is the de-facto standard of Job orchestration.
 
 # How to run it
 
-## Step 1. Init enviromenment. 
+## Step 1. Initialize enviromenment. 
 
-Run this following commands to initalize environment.
+Run this following commands to initialize environment.
+
 * Download spark which is used by Zeppelin
 * Download zeppelin airflow plugins 
 
@@ -35,9 +36,12 @@ There's one dag `zeppelin_example` in Airflow. This dag just run 3 Zeppelin note
 
 ![image](https://user-images.githubusercontent.com/164491/137468051-56b3f50c-f04d-463b-9768-9cc88f7fe4b2.png)
 
-You can enable it, then Airflow would run these Zeppelin notebooks.
+You can enable it, then Airflow would run these Zeppelin notes.
 
-Zeppelin would not run these notes directly, instead it would clone note and run the cloned note.
+Actually Zeppelin would not run these notes directly, instead it would clone note and run the cloned note. 
 
 ![image](https://user-images.githubusercontent.com/164491/137468357-75f4264d-58b8-43a7-a24a-fbf647b8c5bc.png)
+
+
+# More features would come soon, stay tuned.
 
