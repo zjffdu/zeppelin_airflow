@@ -15,6 +15,7 @@ Run this following commands to initialize environment.
 
 ```
 git clone https://github.com/zjffdu/zeppelin_airflow.git
+cd zeppelin_airflow
 ./init.sh
 ```
 
