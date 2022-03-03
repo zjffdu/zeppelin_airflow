@@ -1,6 +1,6 @@
 from airflow import DAG
 from datetime import datetime, timedelta
-from operators.zeppelin_operator import ZeppelinOperator
+from airflow.providers.apache.zeppelin.operators.zeppelin_operator import ZeppelinOperator
 
 default_args = {
     'owner': 'airflow',
@@ -31,7 +31,7 @@ with DAG('zeppelin_example_dag',
     )
 
     pyspark_task = ZeppelinOperator(
-        task_id='pysaprk_note',
+        task_id='pyspark_note',
         conn_id='zeppelin_default',
         note_id='2EWM84JXA'
     )
