@@ -1,0 +1,6 @@
+
+FROM apache/airflow:2.2.4-python3.8
+
+RUN pip install "apache-airflow-providers-http" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.2.4/constraints-3.8.txt"
+
+
