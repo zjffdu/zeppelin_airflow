@@ -81,7 +81,7 @@ services:
         max-size: 10m
         max-file: "3"
     volumes:
-      - ./spark-3.2.0-bin-hadoop3.2:/opt/spark
+      - ./spark-3.2.1-bin-hadoop3.2:/opt/spark
     expose:
       - 8080
     ports:
